@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first ever github repo</title>
-</head>
-<body>
-    <div>
-        <h1>Welcome to my website</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quidem magni, distinctio repellendus blanditiis odit consequuntur ullam? Temporibus eos optio perferendis ipsa odio sapiente, illum excepturi hic adipisci mollitia beatae. Voluptatibus nostrum ipsum qui reiciendis mollitia animi, nihil et aperiam dolorem necessitatibus. Veniam accusantium alias quae. Fugiat iste cum eaque vero esse a, amet impedit omnis totam, nam consectetur aspernatur magnam eos facilis magni deleniti inventore doloribus autem quasi. Amet dolorem cupiditate ullam odit magni neque, nihil porro provident nesciunt quos voluptatibus omnis rem dignissimos numquam eveniet exercitationem eum quae a odio debitis! Alias sed, quae tempore dolorem nesciunt quos!</p>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <style>
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        background-color: gray;
+        position: sticky;
+        top: 10px;
+      }
+      .logo {
+        color: yellow;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .navbar {
+        color: white;
+        margin-right: 100px;
+        font-weight: bold;
+      }
+
+      .content-container{
+        justify-items: center;
+      }
+
+      .box{
+        width: 200px;
+        height: 200px;
+        border: 2px solid salmon;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-container">
+      <a class="logo">Logo</a>
+      <nav style="display: flex">
+        <div class="navbar">Home</div>
+        <div class="navbar">Blog</div>
+        <div class="navbar">Shop</div>
+        <div class="navbar">About</div>
+        <div class="navbar">Contact</div>
+      </nav>
+    </header>
+    <main class="content-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </main>
+  </body>
 </html>
