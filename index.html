@@ -3,57 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal website" />
+    <meta name="author" content="Your Name" />
     <title>Personal Website</title>
+
+    <!-- Tailwind CSS & DaisyUI CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
     <style>
-      .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
-        background-color: gray;
-        position: sticky;
-        top: 10px;
+      * {
+        max-width: 1224px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-      .logo {
-        color: yellow;
-        font-size: 30px;
-        text-transform: uppercase;
-      }
-      .navbar {
-        color: white;
-        margin-right: 100px;
-        font-weight: bold;
-      }
-
-      .content-container{
-        justify-items: center;
-      }
-
-      .box{
-        width: 200px;
-        height: 200px;
-        border: 2px solid salmon;
-        margin: 20px;
+      html,
+      body {
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
       }
     </style>
   </head>
-  <body>
-    <header class="header-container">
-      <a class="logo">Logo</a>
-      <nav style="display: flex">
-        <div class="navbar">Home</div>
-        <div class="navbar">Blog</div>
-        <div class="navbar">Shop</div>
-        <div class="navbar">About</div>
-        <div class="navbar">Contact</div>
+  <body class="bg-gray-50 text-gray-900">
+    <header
+      class="header-container flex justify-between items-center p-4 rounded-md"
+    >
+      <a href="#" class="text-2xl font-bold">Logo</a>
+      <nav class="space-x-6">
+        <a href="#" class="text-lg hover:text-blue-500">Home</a>
+        <a href="#" class="text-lg hover:text-blue-500">Blog</a>
+        <a href="#" class="text-lg hover:text-blue-500">Shop</a>
+        <a href="#" class="text-lg hover:text-blue-500">About</a>
+        <a href="#" class="text-lg hover:text-blue-500">Contact</a>
       </nav>
     </header>
-    <main class="content-container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+
+    <main class="py-10 px-6">
+      <!-- Hero section -->
+      <section>
+        <div class="banner-container grid  w-100% h-96">
+          <!-- <img class="w-full h-auto" src="resourses/hero-banner.jpg" alt="" /> -->
+          <div class="banner-text justify-items-center ">
+            <h2 class="text-3xl font-extrabold">Hello Everyone</h2>
+            <p class="w-2/5 right-1/2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis itaque, earum consequuntur quas ipsum voluptatibus non
+              omnis dolorem asperiores officiis.
+            </p>
+            <button class="btn btn-success text-white bg-transparent">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Blog Section -->
+      <section class="my-10 bg-white">
+        <h2 class="text-3xl font-semibold mb-4">New Blog</h2>
+        <div class="grid grid-cols-4 gap-3 py-3 new-blog-box">
+          <div class="h-60 bg-blue-900 p-6 rounded-lg">Box 1</div>
+          <div class="h-60 bg-green-900 p-6 rounded-lg">Box 2</div>
+          <div class="h-60 bg-red-900 p-6 rounded-lg">Box 3</div>
+          <div class="h-60 bg-orange-900 p-6 rounded-lg">Box 4</div>
+        </div>
+      </section>
+
+      <!-- Another Box Section -->
+      <section>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 1</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 2</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 3</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 4</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 5</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 6</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 7</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 8</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 9</div>
+          <div class="bg-white p-6 shadow-md rounded-lg">Box 10</div>
+        </div>
+      </section>
     </main>
+
+    <footer class="bg-emerald-700 text-base-content text-white p-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <nav>
+          <h6 class="footer-title text-lg">Services</h6>
+          <div class="grid grid-cols-1">
+            <a href="#" class="link link-hover">Branding</a>
+            <a href="#" class="link link-hover">Design</a>
+            <a href="#" class="link link-hover">Marketing</a>
+            <a href="#" class="link link-hover">Advertisement</a>
+          </div>
+        </nav>
+        <nav>
+          <h6 class="footer-title text-lg">Company</h6>
+          <div class="grid grid-cols-1 justify-items-start">
+            <a href="#" class="link link-hover">About us</a>
+            <a href="#" class="link link-hover">Contact</a>
+            <a href="#" class="link link-hover">Jobs</a>
+            <a href="#" class="link link-hover">Press kit</a>
+          </div>
+        </nav>
+        <nav>
+          <h6 class="footer-title text-lg">Social</h6>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
